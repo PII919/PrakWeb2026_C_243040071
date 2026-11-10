@@ -1,0 +1,251 @@
+/* src/App.css */
+
+/* ===== Layout Utama ===== */
+.wadah {
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 0 20px 60px;
+  font-family: Arial, sans-serif;
+  color: #1F2937;
+}
+
+.judul {
+  color: #1B365D;
+  margin-bottom: 4px;
+  font-size: 26px;
+}
+
+.subjudul {
+  color: #6B7280;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+/* ===== Kartu ===== */
+.kartu {
+  background: #FFFFFF;
+  border: 1px solid #D0D7DE;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
+}
+
+.kartu h2 {
+  margin-top: 0;
+  font-size: 17px;
+  color: #1B365D;
+  margin-bottom: 16px;
+}
+
+/* ===== Kartu Saldo ===== */
+.kartu-saldo {
+  background: #1B365D;
+  color: #fff;
+  border: none;
+}
+
+.kartu-saldo h2 {
+  color: #fff;
+  font-size: 18px;
+}
+
+.grid-saldo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.kotak-saldo {
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
+.kotak-masuk {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.kotak-keluar {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.kotak-total {
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 12px;
+  text-align: center;
+}
+
+.label-saldo {
+  font-size: 12px;
+  color: rgba(255,255,255,0.75);
+  margin: 0 0 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.angka-saldo {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.angka-total {
+  font-size: 22px;
+}
+
+.warna-hijau {
+  color: #4ADE80;
+}
+
+.warna-merah {
+  color: #FCA5A5;
+}
+
+/* ===== Form ===== */
+.baris-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  gap: 4px;
+}
+
+.label-form {
+  font-size: 13px;
+  font-weight: bold;
+  color: #374151;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #D0D7DE;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #1B365D;
+  box-shadow: 0 0 0 2px rgba(27, 54, 93, 0.15);
+}
+
+/* ===== Tombol ===== */
+.tombol {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #1B365D;
+  color: #FFFFFF;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.tombol:hover {
+  background: #274d82;
+}
+
+.tombol-tambah {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.tombol-merah {
+  background: #DC2626;
+}
+
+.tombol-merah:hover {
+  background: #b91c1c;
+}
+
+.tombol-kecil {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+/* ===== Daftar Transaksi ===== */
+.daftar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-transaksi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #E5E7EB;
+  gap: 10px;
+}
+
+.item-transaksi:last-child {
+  border-bottom: none;
+}
+
+.info-transaksi {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.keterangan-transaksi {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1F2937;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.badge-masuk {
+  background: #DCFCE7;
+  color: #16A34A;
+}
+
+.badge-keluar {
+  background: #FEE2E2;
+  color: #DC2626;
+}
+
+.nominal-hapus {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nominal-transaksi {
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* ===== Pesan Kosong ===== */
+.kosong {
+  color: #6B7280;
+  text-align: center;
+  font-style: italic;
+  padding: 20px 0;
+}
+
+/* ===== Galat ===== */
+.galat {
+  color: #DC2626;
+  font-size: 13px;
+  margin: 0 0 10px;
+  padding: 8px 12px;
+  background: #FEE2E2;
+  border-radius: 6px;
+  border-left: 3px solid #DC2626;
+}

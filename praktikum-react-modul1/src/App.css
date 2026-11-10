@@ -1,0 +1,391 @@
+/* ===================================
+   LAYOUT UTAMA
+=================================== */
+.app-container {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 24px 60px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  text-align: left;
+  color: #213547;
+}
+
+/* ===================================
+   HERO HEADER — banner biru dengan wave
+=================================== */
+.app-header {
+  background: linear-gradient(135deg, #1B365D 0%, #2a5298 100%);
+  color: #fff;
+  text-align: center;
+  padding: 44px 32px 56px;
+  margin: 0 -24px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-header::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 36px;
+  background: #F5F7FA;
+  clip-path: ellipse(55% 100% at 50% 100%);
+}
+
+.app-header__title {
+  color: #fff;
+  margin: 0 0 6px 0;
+  font-size: 26px;
+  letter-spacing: 0.4px;
+}
+
+.app-header__sub {
+  color: rgba(255,255,255,0.75);
+  font-size: 14px;
+  margin: 0 0 10px 0;
+}
+
+.app-header__modul {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin: 0;
+}
+
+/* ===================================
+   SECTION GENERIK
+=================================== */
+.app-section {
+  margin-top: 36px;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  color: #1B365D;
+  border-bottom: 2px solid #E1E4E8;
+  padding-bottom: 8px;
+  margin-top: 0;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-desc {
+  color: #777;
+  font-size: 13px;
+  margin: -4px 0 16px 0;
+}
+
+/* ===================================
+   KARTU PROFIL
+=================================== */
+.kartu-profil {
+  background: #fff;
+  border: 1px solid #D0D7DE;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.kartu-profil__body {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.kartu-profil__foto-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.kartu-profil__foto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  border: 3px solid #1B365D;
+}
+
+.kartu-profil__status-dot {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.dot--aktif   { background: #28a745; }
+.dot--nonaktif { background: #ffc107; }
+
+.kartu-profil__info {
+  flex: 1;
+}
+
+.kartu-profil__nama {
+  margin: 0 0 6px 0;
+  color: #1B365D;
+  font-size: 18px;
+}
+
+.kartu-profil__detail {
+  margin: 3px 0;
+  font-size: 13px;
+  color: #555;
+  display: flex;
+  gap: 8px;
+}
+
+.kartu-profil__label {
+  color: #999;
+  min-width: 42px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-top: 1px;
+}
+
+.badge-status {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 3px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.badge-status--aktif {
+  background: #D4EDDA;
+  color: #155724;
+}
+
+.badge-status--nonaktif {
+  background: #FFF3CD;
+  color: #856404;
+}
+
+/* ===================================
+   BADGE KEAHLIAN — section wrapper
+=================================== */
+.keahlian-section {
+  margin-top: 20px;
+}
+
+.keahlian-title {
+  color: #444;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 10px 0;
+}
+
+.keahlian-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* ===================================
+   DAFTAR MATKUL
+=================================== */
+.matkul-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.matkul-item {
+  padding: 14px 18px;
+  background-color: #FFFFFF;
+  border: 1px solid #E1E4E8;
+  border-left: 5px solid #1B365D;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.15s ease;
+}
+
+.matkul-item:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.matkul-item__kode {
+  font-weight: bold;
+  color: #1B365D;
+}
+
+.matkul-item__hari {
+  font-size: 12px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.matkul-item__sks {
+  background-color: #EFF2F5;
+  color: #1B365D;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* ===================================
+   PORTOFOLIO GRID
+=================================== */
+.portofolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  gap: 18px;
+}
+
+/* ===================================
+   KARTU PROYEK
+=================================== */
+.kartu-proyek {
+  border: 1px solid #D0D7DE;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.kartu-proyek:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.11);
+  transform: translateY(-3px);
+}
+
+.kartu-proyek__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.kartu-proyek__icon {
+  font-size: 22px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.kartu-proyek__judul {
+  margin: 0;
+  font-size: 15px;
+  color: #1B365D;
+  line-height: 1.35;
+}
+
+.kartu-proyek__deskripsi {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+  line-height: 1.65;
+  flex: 1;
+}
+
+/* ===================================
+   TAG TEKNOLOGI
+=================================== */
+.kartu-proyek__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag-teknologi {
+  background-color: #EFF2F5;
+  color: #1B365D;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 3px 9px;
+  border-radius: 10px;
+  letter-spacing: 0.3px;
+}
+
+/* ===================================
+   TOMBOL GITHUB
+=================================== */
+.kartu-proyek__footer {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid #E1E4E8;
+}
+
+.tombol-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background-color: #1B365D;
+  color: #FFFFFF !important;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none !important;
+  transition: background-color 0.2s ease;
+}
+
+.tombol-github:hover {
+  background-color: #2a5298;
+  color: #FFFFFF !important;
+}
+
+/* ===================================
+   TOMBOL UTAMA
+=================================== */
+.tombol-utama {
+  background-color: #1B365D;
+  color: #FFFFFF;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.tombol-utama:hover {
+  background-color: #2a5298;
+  border-color: transparent;
+  transform: translateY(-1px);
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+@media (max-width: 600px) {
+  .portofolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .app-header__title {
+    font-size: 20px;
+  }
+
+  .kartu-profil__body {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .kartu-profil__detail {
+    justify-content: center;
+  }
+}
